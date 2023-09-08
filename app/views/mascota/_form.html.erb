@@ -1,0 +1,52 @@
+<%= form_with(model: mascotum) do |form| %>
+  <% if mascotum.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(mascotum.errors.count, "error") %> prohibited this mascotum from being saved:</h2>
+
+      <ul>
+        <% mascotum.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nombre, style: "display: block" %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div>
+    <%= form.label :especie, style: "display: block" %>
+    <%= form.text_field :especie %>
+  </div>
+
+  <div>
+    <%= form.label :raza, style: "display: block" %>
+    <%= form.text_field :raza %>
+  </div>
+
+  <div>
+    <%= form.label :fotoPerfil, style: "display: block" %>
+    <%= form.text_field :fotoPerfil %>
+  </div>
+
+  <div>
+    <%= form.label :fechaNacimiento, style: "display: block" %>
+    <%= form.text_field :fechaNacimiento %>
+  </div>
+
+  <div>
+    <%= form.label :notas, style: "display: block" %>
+    <%= form.text_field :notas %>
+  </div>
+
+  <div>
+    <%= form.label :clientes_id, style: "display: block" %>
+    <%= form.text_field :clientes_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

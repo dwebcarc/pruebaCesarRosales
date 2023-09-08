@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mascota</h1>
+
+<div id="mascota">
+  <% @mascota.each do |mascotum| %>
+    <%= render mascotum %>
+    <p>
+      <%= link_to "Show this mascotum", mascotum %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mascotum", new_mascotum_path %>

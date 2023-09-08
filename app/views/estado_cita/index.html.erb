@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Estado cita</h1>
+
+<div id="estado_cita">
+  <% @estado_cita.each do |estado_citum| %>
+    <%= render estado_citum %>
+    <p>
+      <%= link_to "Show this estado citum", estado_citum %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New estado citum", new_estado_citum_path %>

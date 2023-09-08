@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cita</h1>
+
+<div id="cita">
+  <% @cita.each do |citum| %>
+    <%= render citum %>
+    <p>
+      <%= link_to "Show this citum", citum %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New citum", new_citum_path %>

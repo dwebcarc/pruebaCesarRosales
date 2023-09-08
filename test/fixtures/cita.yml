@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fechaHora: 2023-09-07
+  duracion: MyString
+  estado_citum: one
+  mascota: one
+  veterinario: one
+  servicio: one
+
+two:
+  fechaHora: 2023-09-07
+  duracion: MyString
+  estado_citum: two
+  mascota: two
+  veterinario: two
+  servicio: two
